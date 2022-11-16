@@ -1,0 +1,166 @@
+@import '../components/mixins';
+@import '../components/function';
+
+
+.sectionhome{
+    margin: 35px 50px;
+     height: 400px;
+    
+    // background-color: aqua;
+    @include flex-center(none, row);
+
+    @include mobile{
+        // flex-direction: column;
+        height: auto;
+        margin: 35px 20px;
+        @include flex-center(none, column);
+    }
+
+    @include small-device{
+        margin: 35px 10px;
+
+      }
+    
+
+
+    
+
+    .rent_text{
+        flex:0.5;
+        gap:20px;
+        justify-content: center;
+        // padding-top: 40px 0;
+        // background-color: red;
+        @include flex-center(none, column);
+
+        .home_text{
+            // width: 70%;
+            font-weight: 700;
+            font-size: 34px;
+            color: color(secondary);
+            span{
+                color: color(primary);
+            }
+            // background-color: red;
+
+            @include mobile{
+                // flex-direction: column;
+                font-size: 28px;
+                
+            }
+
+        }
+        .motto_text{
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        color: color(secondary);
+
+        }
+
+        .subscribe{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            // gap: 20px;
+            align-items: center;
+            // background-color: red;
+
+            input{
+                border:none;
+                outline:none;
+                
+               
+            }
+            #text_input{
+                width: 70%;
+                height: 30px;
+                background: rgba(247, 247, 247, 0.1);
+                border: 1px solid #A3A3A3;
+                border-radius: 8px 0px 0px 8px;
+
+                #text_input::placeholder{
+                    padding-left: 20px;
+
+                }
+                @include mobile{
+                    width: 100%;
+                }
+                // @include small-device{
+                //     width: 80%;
+      
+                //   }
+             }
+
+            #submit{
+                
+                padding: 10px;
+                color: white;
+                border-radius: 0px 8px 8px 0px;
+                background-color: $primary;
+                font-size: size(small);
+    
+                @include mobile{
+                    // flex-direction: column;
+                //   font-size: size(base);
+                //   padding: 7px;
+            
+                }
+            }
+        }
+
+    }
+    .rent_pics{
+        flex:0.5;
+        display: flex;
+        gap: 5px;
+        // background-color: blue;
+        
+        @include mobile{
+            // flex-direction: column;
+           padding-top: 30px;
+            
+        }
+
+        // @include small-device{
+        //    gap: 2px;
+
+        //   }
+        
+
+        .nft_home{
+            height: 176px;
+            width: 234px;
+            border-radius: 15px;
+            @include mobile{
+                // flex-direction: column;
+                width: 180px;
+                
+            }
+            @include small-device{
+                width: 150px;
+        
+              };
+
+              @include large-device{
+                width: 170px;
+              }
+
+            // @include small-device{
+            //   width: 170px;
+
+            // }
+
+        }
+        .box_one{
+            margin-top: 40px;
+
+            @include mobile{
+                // flex-direction: column;
+                margin-top: 0;
+                
+            }
+        }
+    }
+
+}

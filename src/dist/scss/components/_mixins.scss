@@ -1,0 +1,45 @@
+@import '../variables';
+@import'./function';
+
+@mixin flex-center($position, $direction){
+  display:flex;
+  justify-content: $position;
+  flex-direction:$direction;
+
+};
+@mixin mobile {
+  @media screen and (max-width: $mobile){
+      @content;
+
+  }
+}
+
+// @mixin extra-small-device {
+//   @media screen and (min-width: breakpoint("extra-small")) {
+//     @content;
+//   }
+// }
+
+@mixin small-device {
+  @media screen and (max-width: container("small")) {
+    @content;
+  }
+}
+
+// @mixin medium-device {
+//   @media screen and (max-width: container("medium")) {
+//     @content;
+//   }
+// }
+
+@mixin large-device {
+  @media screen and (max-width: container("large")) {
+    @content;
+  }
+}
+
+// @mixin extra-large-device {
+//   @media screen and (min-width: breakpoint("extra-large")) {
+//     @content;
+//   }
+// }

@@ -1,0 +1,18 @@
+@import '../components/mixins';
+@import '../components/function';
+
+
+.sectionmain{
+    margin: 35px 50px;
+    border-top:  30px solid color(primary);
+    // background-color: red;
+
+    @include mobile{
+        // flex-direction: column;
+        height: auto;
+        margin: 35px 20px;
+        @include flex-center(none, column);
+    }
+
+
+}

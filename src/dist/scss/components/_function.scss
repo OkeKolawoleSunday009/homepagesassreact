@@ -1,0 +1,18 @@
+@import '../variables';
+
+@function size($font-name){
+    @return map-get($font-sizes, $font-name )
+};
+
+@function container($size) {
+    @return map-get($containers, $size);
+  };
+  
+  @function color($color) {
+    @return map-get($colors, $color);
+  };
+  
+  @function breakpoint($size) {
+    @return map-get($breakpoints, $size);
+  };
+  

@@ -1,0 +1,91 @@
+
+
+// // Shadows
+// $shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+// // Borders
+// $regular-border-radius: 12px;
+// $medium-border-radius: 16px;
+// $large-border-radius: 16px;
+// $larger-border-radius: 24px;
+
+// Colors
+$primary:  #A02279;
+$secondary:#434343;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  
+);
+
+// Font sizes
+$base-font-size: 10px;
+$small-font-size: 0.9rem;
+$regular-font-size: 1.6rem;
+$medium-font-size: 1.8rem;
+$large-font-size: 2.4rem;
+$extra-large-font-size: 3.6rem;
+
+$font-sizes: (
+  "base": $base-font-size,
+  "small": $small-font-size,
+  "regular": $regular-font-size,
+  "medium": $medium-font-size,
+  "large": $large-font-size,
+  "extra-large": $extra-large-font-size,
+);
+
+// Font family
+$font-family: "Poppins", sans-serif;
+$header-font-family: "Heebo", sans-serif;
+
+// Font weights
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+$extra-bold-font-weight: 800;
+
+$font-weights: (
+  "light": $light-font-weight,
+  "regular": $regular-font-weight,
+  "medium": $medium-font-weight,
+  "bold": $bold-font-weight,
+  "extra-bold": $extra-bold-font-weight,
+);
+//vaiables 
+
+$mobile: 800px;
+
+// Breakpoints
+$extra-small-device: 0;
+$small-device: 576px;
+$medium-device: 768px;
+$large-device: 992px;
+$extra-large-device: 1200px;
+
+$breakpoints: (
+  "extra-small": $extra-small-device,
+  "small": $small-device,
+  "medium": $medium-device,
+  "large": $large-device,
+  "extra-large": $extra-large-device,
+);
+
+$extra-small-container: auto;
+$small-container: 667px;
+$medium-container: 720px;
+$large-container: 884px;
+$extra-large-container: 1140px;
+
+$containers: (
+  "extra-small": $extra-small-container,
+  "small": $small-container,
+  "medium": $medium-container,
+  "large": $large-container,
+  "extra-large": $extra-large-container,
+);
+
+
+
