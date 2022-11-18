@@ -1,0 +1,79 @@
+@import '../components/mixins';
+@import '../components/function';
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+.other_links{
+    margin:0;
+   background-color:  color(primary);
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 150px;
+   color: $white;
+   font-size: size(regular);
+   font-weight: fontWeight(medium);
+    // background-color: red;
+
+    @include mobile{
+        // flex-direction: column;
+        height: auto;
+        margin: 0;
+        gap: 30px;
+        font-size: size(small);
+
+
+        // @include flex-center(none, column);
+    }
+
+    .digital_currency{
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .logo{
+            width: 30px;
+            height: 30px;
+
+            @include mobile{
+               
+                width: 20px;
+                height: 20px;
+            }
+          
+        }
+
+
+    }
+    
+    .first{
+        font-family: 'poppins';
+        font-size: 32px;
+        @include mobile{
+            font-size: size(small);
+        }
+      
+
+    }
+
+    .third{
+        font-family: 'poppins';
+        font-size: 32px;
+        font-size: fontWeight(bold);
+        @include mobile{
+            font-size: size(small);
+        }
+      
+    }
+    .second{
+        // font-family: 'poppins';
+        font-size: 32px;
+        @include mobile{
+            font-size: size(small);
+        }
+      
+    }
+
+   
+
+}

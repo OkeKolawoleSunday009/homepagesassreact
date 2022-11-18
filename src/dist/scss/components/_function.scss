@@ -3,6 +3,9 @@
 @function size($font-name){
     @return map-get($font-sizes, $font-name )
 };
+@function fontWeight($font-weight){
+  @return map-get($font-weights, $font-weight )
+};
 
 @function container($size) {
     @return map-get($containers, $size);

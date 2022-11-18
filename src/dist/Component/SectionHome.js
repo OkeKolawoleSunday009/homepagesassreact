@@ -21,7 +21,7 @@ export default function SectionHome() {
 
             <div className='subscribe'>
                 <input type="text" id="text_input" placeholder='Enter your Email' />
-                <input type="submit" id="submit" value="subscribe"/>
+                <input type="submit" id="submit" value="search"/>
             </div>
 
 

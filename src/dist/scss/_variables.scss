@@ -12,17 +12,20 @@
 // Colors
 $primary:  #A02279;
 $secondary:#434343;
+$white :  #FFFFFF;
+$black: black;
 
 $colors: (
   "primary": $primary,
   "secondary": $secondary,
-  
+   "primary-white": $white,
+   "primary-black": $black
 );
 
 // Font sizes
 $base-font-size: 10px;
 $small-font-size: 0.9rem;
-$regular-font-size: 1.6rem;
+$regular-font-size: 1.3rem;
 $medium-font-size: 1.8rem;
 $large-font-size: 2.4rem;
 $extra-large-font-size: 3.6rem;
@@ -56,36 +59,25 @@ $font-weights: (
 );
 //vaiables 
 
-$mobile: 800px;
 
 // Breakpoints
-$extra-small-device: 0;
-$small-device: 576px;
-$medium-device: 768px;
-$large-device: 992px;
-$extra-large-device: 1200px;
+// $extra-small-device: 0;
+// $small-device: 576px;
+// $medium-device: 768px;
+// $large-device: 992px;
+// $extra-large-device: 1200px;
 
-$breakpoints: (
-  "extra-small": $extra-small-device,
-  "small": $small-device,
-  "medium": $medium-device,
-  "large": $large-device,
-  "extra-large": $extra-large-device,
-);
-
-$extra-small-container: auto;
-$small-container: 667px;
-$medium-container: 720px;
-$large-container: 884px;
-$extra-large-container: 1140px;
-
-$containers: (
-  "extra-small": $extra-small-container,
-  "small": $small-container,
-  "medium": $medium-container,
-  "large": $large-container,
-  "extra-large": $extra-large-container,
-);
+// $breakpoints: (
+//   "extra-small": $extra-small-device,
+//   "small": $small-device,
+//   "medium": $medium-device,
+//   "large": $large-device,
+//   "extra-large": $extra-large-device,
+// );
 
 
+
+$mobile: 800px;
+$mediumdevice: 920px;
+$largedevice: 1084px;
 

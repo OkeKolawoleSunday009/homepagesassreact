@@ -1,0 +1,153 @@
+@import '../components/mixins';
+@import '../components/function';
+@import '../variables';
+
+
+
+
+.sectionnft{
+    // margin: 35px 50px;
+    background-color:$primary;
+    // width: 1440px;
+    height: 774px;
+    display: flex;
+
+
+
+    @include mobile{
+        width: 100%;
+        flex-direction: column;
+        // height: auto;
+        // margin: 35px 20px;
+        // @include flex-center(none, column);
+
+    }
+    .nft_abt{
+        padding-left: 40px;
+        padding-right: 40px;
+        flex: 0.4;
+        // background-color: blue;
+        @include flex-center(center, column);
+        gap: 30px;
+        
+
+        .meta_head{
+            font-weight: 700;
+            font-size: 34px;
+            color: color(primary-white);
+
+            @include mobile{
+                font-size: size(regular);
+            }
+          
+
+        }
+        .meta_text{
+            font-family: 'Red Rose';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 30px;
+            color: color(primary-white);
+
+            @include mobile{
+                font-size: size(small);
+                line-height: 25px;
+            }
+          
+
+
+        }
+        .meta_button{
+            width: 156px;
+            height: 48px;
+            border-radius: 8px;
+            background-color: color(primary-white);
+            color: color(primary);
+            border: none;
+
+        }
+    }
+    .nft_view{
+        flex: 0.6;
+     
+        position: relative;
+
+        // background-color: red;
+        // color: color(primary);
+        padding-left: 40px;
+        padding-right: 40px;
+
+
+       .content{
+        background-color: red;
+        position: absolute;
+        top:25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+
+        .image_wrapper{
+
+            position: relative;
+            background-color: red;
+
+            
+        .img_luxury{
+            width: 298.2px;
+            height: 233.89px;
+
+            @include mobile{
+                width: 238.2px;
+                height: 183.89px;
+
+            }
+        }
+        .img_luxury2{
+            width: 298.2px;
+            height: 203.89px;
+
+            @include mobile{
+                width: 238.2px;
+                height: 150.89px;
+
+            }
+        }
+        .image9{
+            position: absolute;
+            top: 0;
+            left: 20%;
+            transform: translate(-30%, 45%);
+
+
+            //  left: 323.45px;
+            // top: 0px;
+        }
+        .image7{
+            position: absolute;
+            top: 30%;
+            transform: translate(1%, 5%);
+
+
+
+//             left: 0px;
+// top: 333.13px;
+        }
+        .image8{
+            position: absolute;
+            top: 30%;
+            transform: translate(20%, 70%);
+            z-index: 1000;
+
+//             left: 291.53px;
+// top: 323.93px;
+        }
+
+
+        }
+
+       }
+    }
+
+
+
+}

@@ -1,5 +1,6 @@
 @import '../components/mixins';
 @import '../components/function';
+@import '../variables';
 
 
 .sectionhome{
@@ -16,11 +17,8 @@
         @include flex-center(none, column);
     }
 
-    @include small-device{
-        margin: 35px 10px;
+  
 
-      }
-    
 
 
     
@@ -46,15 +44,22 @@
             @include mobile{
                 // flex-direction: column;
                 font-size: 28px;
+                // background-color: red;
                 
             }
 
         }
         .motto_text{
-        width: 100%;
+        width: 90%;
         font-weight: 400;
         font-size: 14px;
         color: color(secondary);
+
+        @include mobile{
+            width: 100%;
+            // background-color: #A3A3A3;
+
+          }
 
         }
 
@@ -69,7 +74,11 @@
             input{
                 border:none;
                 outline:none;
-                
+
+                @include mobile{
+                    // width: 70%;
+      
+                  }
                
             }
             #text_input{
@@ -85,11 +94,8 @@
                 }
                 @include mobile{
                     width: 100%;
-                }
-                // @include small-device{
-                //     width: 80%;
-      
-                //   }
+                };
+                
              }
 
             #submit{
@@ -134,17 +140,11 @@
             border-radius: 15px;
             @include mobile{
                 // flex-direction: column;
-                width: 180px;
+                width: 170px;
                 
             }
-            @include small-device{
-                width: 150px;
-        
-              };
 
-              @include large-device{
-                width: 170px;
-              }
+            
 
             // @include small-device{
             //   width: 170px;

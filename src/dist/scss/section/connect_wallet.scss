@@ -1,0 +1,115 @@
+@import '../components/mixins';
+@import '../components/function';
+// @import '../components/responsive';
+
+@import '../variables';
+
+
+.container{
+    position: absolute;
+    background:rgba(0,0,0,0.7);
+
+    // .blur{
+    //     opacity: 0.5;
+    //     // background: linear-gradient();
+    // }
+}
+
+.connect_wallet{
+    font-family: 'Red Rose';
+
+    background-color: color(primary-white);
+
+    width: 40%;
+    height: 200px;
+    border-radius: 8px;
+    margin: 0 auto;
+    // padding: 5px 15px;
+    @include flex-center(center, column);
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // align-items: center;
+
+    // color:black;\
+
+    @include mobile{
+        width: 90%;
+        top:8%;
+    }
+
+    .heading{
+        
+        position: absolute;
+        top: 0;
+        font-weight: fontWeight(bold);
+
+        // background-color: blue;
+        width:92%;
+        padding: 15px ;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+
+        
+        .cancel{
+        //    background-color: red;
+           width: 20px;
+           height: 20px;
+           color: color(primary-black);
+        }
+
+        
+
+      
+    }
+
+    .content{
+        width: 100%;
+        margin-top: 20px;
+        // padding: 15px 0;
+        // background-color: blue;
+       
+
+
+        .plain_text{
+            // background-color: white;
+            margin-top: 20px;
+            font-size: size(small);
+            margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .connect_button{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+           
+
+                .input{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 40px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color:rgb(196, 195, 195);
+                    align-items: center;
+                    padding: 0 10px;
+                    font-size: size(small);
+                    font-weight: fontWeight(bold);
+
+                    .arrow{
+                        font-weight: fontWeight(medium);
+                    }
+                }
+
+      
+
+        }
+    }
+
+
+}

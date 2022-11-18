@@ -7,39 +7,26 @@
   flex-direction:$direction;
 
 };
+
 @mixin mobile {
   @media screen and (max-width: $mobile){
       @content;
 
+  };
+};
+
+
+@mixin meduimdevice {
+  @media screen and (max-width: $mediumdevice) {
+    @content;
   }
-}
+};
 
-// @mixin extra-small-device {
-//   @media screen and (min-width: breakpoint("extra-small")) {
-//     @content;
-//   }
-// }
 
-@mixin small-device {
-  @media screen and (max-width: container("small")) {
+
+@mixin largedevice {
+  @media screen and (max-width: $largedevice) {
     @content;
   }
 }
 
-// @mixin medium-device {
-//   @media screen and (max-width: container("medium")) {
-//     @content;
-//   }
-// }
-
-@mixin large-device {
-  @media screen and (max-width: container("large")) {
-    @content;
-  }
-}
-
-// @mixin extra-large-device {
-//   @media screen and (min-width: breakpoint("extra-large")) {
-//     @content;
-//   }
-// }

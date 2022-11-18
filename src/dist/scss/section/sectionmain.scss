@@ -4,7 +4,7 @@
 
 .sectionmain{
     margin: 35px 50px;
-    border-top:  30px solid color(primary);
+
     // background-color: red;
 
     @include mobile{
@@ -12,7 +12,103 @@
         height: auto;
         margin: 35px 20px;
         @include flex-center(none, column);
+
     }
 
+    .main_text{
+        color: colors(black);
+        font-weight: fontWeight(extra-bold) ;
+        text-align: center;
+        font-size: size(large);
+        margin-bottom: 20px;
+
+        @include mobile{
+            font-size: size(regular);
+        }
+
+
+    }
+
+
+    .main_component{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        @include mobile{
+            gap: 10px;
+        }
+        .card_container{
+            background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+            width: 232px;
+            flex: 1 0 calc(25% - 10px);
+            height: 272px;
+            border: 1px solid #D7D7D7;
+            border-radius: 15px;
+            @include flex-center(none, column);
+            align-items: center;
+            padding:5px  0px;
+            gap: 10px;
+
+            @include mobile{
+                // font-size: size(regular);
+                // background: red;
+                 margin-left: 50px;
+                 margin-right: 50px;
+                 
+
+            }
+
+
+            .image{
+                width: 200px;
+                height: 195px;
+
+                @include mobile{
+                    width: calc(200px + 30px);
+                }
+
+                             
+
+            }
+            .text_one{
+                display: flex;
+                justify-content: space-between;
+                // background-color: red;
+                width: 90%;
+
+                .name_nft{
+                    font-size: 12px;
+                    color:  #434343;
+                    font-weight: fontWeight(regular);
+                    line-height: 13px;
+                }
+                .price_nft{
+                   
+                        font-size: 12px;
+                        color:  #434343;
+                        font-weight: fontWeight(bold);
+                        line-height: 13px;
+                    
+                
+                }
+                .distance_nft, .duration_nft{
+                    font-size: 11px;
+                    color:  #434343;
+                    font-weight: fontWeight(regular);
+                    line-height: 13px;
+                }
+
+                .rating{
+                    width: 90%;
+                }
+                
+            }
+        }
+
+    }
+
+   
 
 }
